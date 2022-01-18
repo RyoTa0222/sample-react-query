@@ -11,7 +11,7 @@ export const useQueryTasks = () => {
   return useQuery<Task[], Error>({
     queryKey: 'tasks',
     queryFn: getTasks,
-    // このクエリを使用しているコンポーネントがアンマウントしてから指定秒数後にキャッシュを削除する
+    // このクエリを使用しているコンポーネントがアンマウントしてから指定秒数後にキャッシュを削除する（ガベッジコレクション）
     cacheTime: 10000,
     staleTime: 10000,
   })

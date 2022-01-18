@@ -32,8 +32,8 @@ const App: React.VFC = () => {
             <Routes>
               <Route path="/" element={<ReactQueryA />} />
               <Route path="/query-b" element={<ReactQueryB />} />
-              <Route path="/main-context" element={<MainRTKit />} />
-              <Route path="/main-rtkit" element={<MainContext />} />
+              <Route path="/main-rtkit" element={<MainRTKit />} />
+              <Route path="/main-context" element={<MainContext />} />
               <Route path="/fetch-a" element={<ClassicalFetchA />} />
               <Route path="/fetch-b" element={<ClassicalFetchB />} />
             </Routes>
